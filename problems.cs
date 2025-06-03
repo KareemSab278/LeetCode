@@ -50,3 +50,33 @@
 
 //=================================== 3 ===================================
 
+// public class Solution {
+//     public int RomanToInt(string s) {
+//         Dictionary<string, int> romanMap = new Dictionary<string, int>{
+//             {"IV", 4}, {"IX", 9}, {"XL", 40}, {"XC", 90}, {"CD", 400}, {"CM", 900},
+//             {"I", 1}, {"V", 5}, {"X", 10}, {"L", 50}, {"C", 100}, {"D", 500}, {"M", 1000}
+//         };
+
+//         int total = 0;
+//         int i = 0;
+
+//         while (i < s.Length) {
+//             if (i + 1 < s.Length) {
+//                 string twoChar = s.Substring(i, 2);
+//                 if (romanMap.ContainsKey(twoChar)) {
+//                     total += romanMap[twoChar];
+//                     i += 2;
+//                     continue;
+//                 }
+//             }
+
+//             string oneChar = s.Substring(i, 1);
+//             total += romanMap[oneChar];
+//             i++;
+//         }
+
+//         return total;
+//     }
+// }
+
+//=================================== 4 ===================================
