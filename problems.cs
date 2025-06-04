@@ -80,3 +80,25 @@
 // }
 
 //=================================== 4 ===================================
+
+// using System.Linq;
+
+// public class Solution {
+//     public string LongestCommonPrefix(string[] strs) {
+//         if (strs == null || strs.Length == 0) return "";
+
+//         Array.Sort(strs, (a, b) => a.Length.CompareTo(b.Length));
+//         string firstWord = strs[0];
+//         string output = "";
+
+//         for (int i = 0; i < firstWord.Length; i++) {
+//             output += firstWord[i];
+//             if (!strs.All(s => s.StartsWith(output))) {
+//                 return output.Substring(0, output.Length - 1);
+//             }
+//         }
+//         return output;
+//     }
+// }
+
+//=================================== 5 ===================================
