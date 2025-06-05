@@ -102,3 +102,36 @@
 // }
 
 //=================================== 5 ===================================
+
+public class Solution
+{
+    public bool IsValid(string s)
+    {
+        char[] sArr = s.ToCharArray();
+        Stack<char> stack = new Stack<char>();
+
+        for (int i = 0; i < sArr.Length; i++)
+        {
+            switch (sArr[i])
+            {
+                case '(': stack.Push(')'); break;
+                case '{': stack.Push('}'); break;
+                case '[': stack.Push(']'); break;
+                case ')':
+                case '}':
+                case ']':
+                    if (stack.Count == 0 || stack.Pop() != sArr[i])
+                        return false;
+                    break;
+
+                default:
+                    return false;
+            }
+        }
+
+        return stack.Count == 0;
+    }
+}
+
+
+//=================================== 6 ===================================
