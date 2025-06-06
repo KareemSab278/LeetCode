@@ -103,35 +103,60 @@
 
 //=================================== 5 ===================================
 
-public class Solution
-{
-    public bool IsValid(string s)
-    {
-        char[] sArr = s.ToCharArray();
-        Stack<char> stack = new Stack<char>();
+// public class Solution
+// {
+//     public bool IsValid(string s)
+//     {
+//         char[] sArr = s.ToCharArray();
+//         Stack<char> stack = new Stack<char>();
 
-        for (int i = 0; i < sArr.Length; i++)
-        {
-            switch (sArr[i])
-            {
-                case '(': stack.Push(')'); break;
-                case '{': stack.Push('}'); break;
-                case '[': stack.Push(']'); break;
-                case ')':
-                case '}':
-                case ']':
-                    if (stack.Count == 0 || stack.Pop() != sArr[i])
-                        return false;
-                    break;
+//         for (int i = 0; i < sArr.Length; i++)
+//         {
+//             switch (sArr[i])
+//             {
+//                 case '(': stack.Push(')'); break;
+//                 case '{': stack.Push('}'); break;
+//                 case '[': stack.Push(']'); break;
+//                 case ')':
+//                 case '}':
+//                 case ']':
+//                     if (stack.Count == 0 || stack.Pop() != sArr[i])
+//                         return false;
+//                     break;
 
-                default:
-                    return false;
-            }
-        }
+//                 default:
+//                     return false;
+//             }
+//         }
 
-        return stack.Count == 0;
-    }
-}
-
+//         return stack.Count == 0;
+//     }
+// }
 
 //=================================== 6 ===================================
+
+// public class Solution {
+//     public ListNode MergeTwoLists(ListNode list1, ListNode list2) {
+//         if (list1 == null) return list2;
+//         if (list2 == null) return list1;
+
+//         ListNode dummy = new ListNode(); // this initialises the listnode and it is called dummy for dummy node
+//         ListNode dummyNode = dummy; // this adds the first dummyNode to the ListNode called dummy
+
+//         while(list1 != null && list2 != null){
+//             if(list1.val <= list2.val) {
+//                 dummyNode.next = list1;
+//                 list1 = list1.next;
+//             } else {
+//                 dummyNode.next = list2;
+//                 list2 = list2.next;
+//             }
+//             dummyNode = dummyNode.next;
+//         }
+//         if(list1 == null){dummyNode.next = list2;}
+//         else{dummyNode.next = list1;}
+//         return dummy.next;
+//     }
+// }
+
+//=================================== 7 ===================================
