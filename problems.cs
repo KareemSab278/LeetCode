@@ -161,34 +161,46 @@
 
 //=================================== 7 ===================================
 
-
 // public class Solution {
-//     public int[] RemoveDuplicates(int[] nums) {
-//         return nums.Distinct().ToArray();
+//     public int RemoveDuplicates(int[] nums) {
+//         int k = 1;
+//     for (int i = 1; i < nums.Length; i++) {
+//         if (nums[i] != nums[k - 1]) {
+//             nums[k] = nums[i];
+//             k++;
+//         }
+//     }
+//     return k;
 //     }
 // }
 
-// Leetcode doesnt accept this because leetcode is trash. it asked me to remove duplicates and return the count and filtered array but then i am restricted because it wants an integer but it also wants an array wtf?
-// companies asking us to do leetcode like psycopaths is cruel. i barely have a life studying c# and programming. It is brutal and i dont even have a job. the work to reward ratio is ridiculous.
-// I JUST WANT A FUCKING JOB. 150 Applications in 2 weeks and just getting ghosted and rejected - no decency for even an interview. I dont deserve this. I am frustrated.
-
 //=================================== 8 ===================================
 
-public class Solution
-{
-    public int RemoveElement(int[] nums, int val)
-    {
-        int k = 0;
-        for (int i = 0; i < nums.Length; i++)
-        {
-            if (nums[i] != val)
-            {
-                nums[k] = nums[i];
-                k++;
-            }
-        }
-        return k;
-    }
-}
+// public class Solution
+// {
+//     public int RemoveElement(int[] nums, int val)
+//     {
+//         int k = 0;
+//         for (int i = 0; i < nums.Length; i++)
+//         {
+//             if (nums[i] != val)
+//             {
+//                 nums[k] = nums[i];
+//                 k++;
+//             }
+//         }
+//         return k;
+//     }
+// }
 
 //=================================== 9 ===================================
+
+// public class Solution
+// {
+//     public int StrStr(string haystack, string needle)
+//     {
+//         return haystack.IndexOf(needle);
+//     }
+// }
+
+//=================================== 10 ===================================
