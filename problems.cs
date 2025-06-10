@@ -1,4 +1,4 @@
-// i want problems. ALWAYS
+// i want problems. ALWAYS. If you go to leetcode/problems and sort by difficulty, im doing them all one by one top to bottom.
 
 //=================================== 1 ===================================
 
@@ -231,3 +231,13 @@
 // }
 
 //=================================== 11 ===================================
+
+public class Solution {
+    public int LengthOfLastWord(string s) {
+        string[] sSplit = s.Split(' ', StringSplitOptions.RemoveEmptyEntries); // had to google for this one XD
+        return sSplit[^1].Length;
+    }
+}
+
+//=================================== 12 ===================================
+
