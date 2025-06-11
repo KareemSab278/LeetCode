@@ -232,12 +232,32 @@
 
 //=================================== 11 ===================================
 
-public class Solution {
-    public int LengthOfLastWord(string s) {
-        string[] sSplit = s.Split(' ', StringSplitOptions.RemoveEmptyEntries); // had to google for this one XD
-        return sSplit[^1].Length;
-    }
-}
+// public class Solution {
+//     public int LengthOfLastWord(string s) {
+//         string[] sSplit = s.Split(' ', StringSplitOptions.RemoveEmptyEntries); // had to google for this one XD
+//         return sSplit[^1].Length;
+//     }
+// }
 
 //=================================== 12 ===================================
 
+// public class Solution {
+//     public int[] PlusOne(int[] digits) {
+//         BigInteger result = BigInteger.Parse(string.Concat(digits));
+//         result++;
+//         return result.ToString().Select(c => c - '0').ToArray();
+//     }
+// }
+
+//=================================== 13 =================================== JS FROM HERE DOWN
+
+// /**
+//  * @param {string} a
+//  * @param {string} b
+//  * @return {string}
+//  */
+// var addBinary = function(a, b) {
+//     return (parseInt(a, 2) + parseInt(b,2)).toString(2);
+// };
+
+//=================================== 14 ===================================
