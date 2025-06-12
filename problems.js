@@ -251,13 +251,20 @@
 
 //=================================== 13 =================================== JS FROM HERE DOWN
 
-// /**
-//  * @param {string} a
-//  * @param {string} b
-//  * @return {string}
-//  */
 // var addBinary = function(a, b) {
-//     return (parseInt(a, 2) + parseInt(b,2)).toString(2);
+//     let sum = BigInt('0b' + a) + BigInt('0b' + b);
+//     return sum.toString(2);
 // };
 
 //=================================== 14 ===================================
+
+// var mySqrt = function(x) {
+//     let i = 0;
+//     while (i * i <= x) {
+//         if (i * i === x) return i;
+//         i++;
+//     }
+//     return i - 1;
+// };
+
+//=================================== 15 ===================================
