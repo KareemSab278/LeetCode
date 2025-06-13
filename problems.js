@@ -268,3 +268,13 @@
 // };
 
 //=================================== 15 ===================================
+
+// function climbStairs(n) {
+//     let a = 1, b = 1;
+//     for (let i = 0; i < n; i++) {      // ngl i needed ai to help me with this one because i never did fibonacci before...
+//         [a, b] = [b, a + b];
+//     }
+//     return a;
+// }
+
+//=================================== 16 ===================================
